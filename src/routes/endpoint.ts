@@ -43,6 +43,11 @@ import { randomHentaifox } from "../controllers/hentaifox/hentaifoxRandom";
 import { getMissav } from "../controllers/missav/missavGet";
 import { searchMissav } from "../controllers/missav/missavSearch";
 
+// src/routes/endpoint.ts
+import { globalSearch } from "../controllers/globalSearch";
+
+router.get("/global/search", globalSearch);
+
 /**
  * @swagger
  * tags:
